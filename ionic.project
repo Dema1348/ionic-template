@@ -1,5 +1,5 @@
 {
-  "name": "ionic-starter",
+  "name": "app-plantilla",
   "app_id": "",
   "gulpStartupTasks": [
     "sass",

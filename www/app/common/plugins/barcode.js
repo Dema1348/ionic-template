@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  angular.module('app')
+  angular.module('app.common')
     .factory('BarcodePlugin', BarcodePlugin);
 
   // for Barcode plugin : phonegap-plugin-barcodescanner (https://github.com/phonegap/phonegap-plugin-barcodescanner)

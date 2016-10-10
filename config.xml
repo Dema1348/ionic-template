@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="fr.loicknuchel.starter.ionic" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>ionic-starter</name>
-  <description>Start a new ionic project in seconds !</description>
+<widget id="com.haibu.iot" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>app-plantilla</name>
+  <description>Proyecto plantilla!</description>
   <author email="you@example.com" href="http://example.com.com/">Your Name Here</author>
   <content src="index.html"/>
   <access origin="*"/>

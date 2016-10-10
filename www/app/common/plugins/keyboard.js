@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  angular.module('app')
+  angular.module('app.common')
     .factory('KeyboardPlugin', KeyboardPlugin);
 
   // for Keyboard plugin : https://github.com/driftyco/ionic-plugin-keyboard

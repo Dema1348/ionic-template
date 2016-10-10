@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  angular.module('app')
+  angular.module('app.common')
     .factory('DialogPlugin', DialogPlugin);
 
   // for Dialogs plugin : org.apache.cordova.dialogs (https://github.com/apache/cordova-plugin-dialogs)

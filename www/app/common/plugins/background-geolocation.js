@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  angular.module('app')
+  angular.module('app.common')
     .factory('BackgroundGeolocationPlugin', BackgroundGeolocationPlugin);
 
   // for BackgroundGeolocation plugin : https://github.com/christocracy/cordova-plugin-background-geolocation

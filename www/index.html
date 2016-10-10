@@ -4,40 +4,82 @@
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <title>Ionic Starter</title>
+    <title>Ionic</title>
 
     <!-- compiled css output -->
     <link href="css/ionic.app.css" rel="stylesheet">
+
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
     <script src="lib/lodash/lodash.min.js"></script>
     <script src="lib/moment/min/moment.min.js"></script>
-    <script src="lib/moment/locale/fr.js"></script>
+    <script src="lib/moment/locale/es.js"></script>
+    <script src="app/paho/mqttws31.js"></script>
+    <script src="lib/ngmap/build/scripts/ng-map.min.js"></script>
+   
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.1/Chart.min.js"></script>
+    <script src="lib/angular-chart.js/dist/angular-chart.js"></script>
+
+
+
 
     <!-- cordova script (you can setup plugin mocks here) -->
     <script src="cordova.js"></script>
     
-    <!-- your app's js -->
-    <script src="app/_Logger.js"></script>
+    <!--  app's js -->
     <script src="app/app.js"></script>
-    <script src="app/constants.js"></script>
+    
+     <!--  common's js -->
+    <script src="app/common/common.module.js"></script>
     <script src="app/common/plugins/utils.js"></script>
     <script src="app/common/plugins/inappbrowser.js"></script>
     <script src="app/common/plugins/sqlite.js"></script>
     <script src="app/common/plugins/toast.js"></script>
+    <script src="app/common/plugins/device.js"></script>
     <script src="app/common/utils.js"></script>
     <script src="app/common/storage.js"></script>
-    <script src="app/common/backend.js"></script>
     <script src="app/common/ui/utils.js"></script>
     <script src="app/common/ui/generic-filters.js"></script>
-    <script src="app/layout/loading.ctrl.js"></script>
-    <script src="app/layout/layout.ctrl.js"></script>
-    <script src="app/authentication/login.ctrl.js"></script>
-    <script src="app/twitts/twitts.ctrl.js"></script>
-    <script src="app/twitts/twitt.ctrl.js"></script>
-    <script src="app/settings/settings.ctrl.js"></script>
+
+    <!--  core's js -->
+    <script src="app/core/core.module.js"></script>
+    <script src="app/core/run.js"></script>
+    <script src="app/core/constants.js"></script>
+    <script src="app/core/router.js"></script>
+    <script src="app/core/services.js"></script>
+    <script src="app/core/mqtt.js"></script>
+
+   
+
+    <!--  menu's js -->
+    <script src="app/menu/menu.module.js"></script>
+    <script src="app/menu/menu.js"></script>
+
+
+    <!--  paho's js -->
+    <script src="app/paho/paho.module.js"></script>
+    <script src="app/paho/paho.js"></script>
+
+    <!--  login's js -->
+    <script src="app/login/login.module.js"></script>
+    <script src="app/login/login.js"></script>
+
+    <!--  sensors's js -->
+    <script src="app/sensors/sensors.module.js"></script>
+    <script src="app/sensors/sensors.js"></script>
+
+    <!--  sensor's js -->
+    <script src="app/sensor/sensor.module.js"></script>
+    <script src="app/sensor/sensor.js"></script>
+
+    <!--  setting's js -->
+    <script src="app/settings/settings.module.js"></script>
+    <script src="app/settings/settings.js"></script>
+
+
   </head>
+
   <body ng-app="app">
     <ion-nav-view></ion-nav-view>
   </body>

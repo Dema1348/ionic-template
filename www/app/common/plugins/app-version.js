@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  angular.module('app')
+  angular.module('app.common')
     .factory('AppVersionPlugin', AppVersionPlugin);
 
   // for AppVersion plugin : cordova-plugin-appversion (https://github.com/Rareloop/cordova-plugin-app-version)

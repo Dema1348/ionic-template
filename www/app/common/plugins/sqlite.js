@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  angular.module('app')
+  angular.module('app.common')
     .factory('SQLitePlugin', SQLitePlugin);
 
   // for SQLite plugin : cordova-sqlite-storage (https://github.com/litehelpers/Cordova-sqlite-storage)

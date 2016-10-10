@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  angular.module('app')
+  angular.module('app.common')
     .factory('Storage', Storage)
     .factory('_StorageUtils', _StorageUtils) // private service, should not be used outside this file !!!
     .factory('_SQLiteUtils', _SQLiteUtils); // private service, should not be used outside this file !!!
@@ -8,8 +8,7 @@
   function Storage(_StorageUtils){
     var keys = {
       user: 'user',
-      userSettings: 'user-settings',
-      twitts: 'twitts'
+      userSettings: 'user-settings'
     };
     return {
       // user
@@ -17,10 +16,7 @@
       setUser: setUser,
       getUserSettings: getUserSettings,
       setUserSettings: setUserSettings,
-      // twitts
-      getTwitt: getTwitt,
-      getTwitts: getTwitts,
-      setTwitts: setTwitts,
+
       // global
       clear: clear
     };
@@ -44,19 +40,6 @@
       return _StorageUtils.set(keys.userSettings, settings);
     }
 
-    function getTwitt(id){
-      return getTwitts().then(function(twitts){
-        return _.find(twitts, {id: id});
-      });
-    }
-
-    function getTwitts(){
-      return _StorageUtils.get(keys.twitts);
-    }
-
-    function setTwitts(twitts){
-      return _StorageUtils.set(keys.twitts, twitts);
-    }
 
     function clear(){
       return _StorageUtils.clear();
@@ -96,7 +79,7 @@
             delete promiseStorageCache[key];
             return angular.copy(storageCache[key]);
           }, function(error){
-            Logger.error('Unable to _StorageUtils.get('+key+') !!!', error);
+            console.error('Unable to _StorageUtils.get('+key+') !!!', error);
             delete promiseStorageCache[key];
           });
           return promiseStorageCache[key];
@@ -127,13 +110,13 @@
           return storage.setItem(storagePrefix+key, JSON.stringify(storageCache[key])).then(function(value){
             // return nothing !
           }, function(error){
-            Logger.error('error in LocalForageUtils._set('+key+')', error);
+            console.error('error in LocalForageUtils._set('+key+')', error);
           });
         } else {
           return $q.when();
         }
       } else {
-        //Logger.debug('Don\'t save <'+key+'> because values are equals !', value);
+        //console.debug('Don\'t save <'+key+'> because values are equals !', value);
         return $q.when();
       }
     }
@@ -170,7 +153,7 @@
             keysCachePromise = null;
             return angular.copy(keysCache);
           }, function(error){
-            Logger.error('Unable to _StorageUtils._getKeys() !!!', error);
+            console.error('Unable to _StorageUtils._getKeys() !!!', error);
             keysCachePromise = null;
           });
           return keysCachePromise;

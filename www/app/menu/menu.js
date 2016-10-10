@@ -1,18 +1,19 @@
 (function(){
   'use strict';
-  angular.module('app')
-    .controller('LayoutCtrl', LayoutCtrl);
+  angular.module('app.menu')
+    .controller('Menu', Menu);
 
-  function LayoutCtrl($state, $scope, $ionicHistory, Storage){
-    var fn = {};
-    $scope.fn = fn;
+  function Menu($state, $scope, $ionicHistory, Storage){
+    var vm = this;
+    vm.logout = logout;
 
-    fn.logout = function(){
+    function logout(){
       Storage.clear().then(function(){
         $ionicHistory.clearHistory();
         $ionicHistory.clearCache();
         $state.go('login');
       });
     };
+
   }
 })();

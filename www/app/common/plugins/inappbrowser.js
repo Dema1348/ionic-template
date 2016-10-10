@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  angular.module('app')
+  angular.module('app.common')
     .factory('InAppBrowserPlugin', InAppBrowserPlugin)
     .directive('href', href);
 

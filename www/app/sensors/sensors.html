@@ -1,0 +1,28 @@
+<ion-view title="Home">
+  <ion-content >
+    <div class="list list-inset">
+        
+      <a class="item item-icon-left" ui-sref="app.sensor({param:sensor})" ng-repeat="sensor in vm.data.sensor">
+        <i class="icon ion-waterdrop"></i>
+        {{sensor.name}} 
+        <span class="item-note">
+        {{sensor.data}}
+        </span>
+      </a>
+
+
+    </div>
+
+
+     <div class="card">
+        <div class="item item-divider">
+           Grafico
+        </div>
+        <div class="item item-text-wrap">
+            <canvas id="line" class="chart chart-line" data="vm.data.numbers" labels="vm.labels" legend="false" series="vm.series" ></canvas>
+        </div>
+    </div>
+
+
+  </ion-content>
+</ion-view>

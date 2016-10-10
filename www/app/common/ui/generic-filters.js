@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  angular.module('app')
+  angular.module('app.common')
     .filter('date', formatDate)
     .filter('time', formatTime)
     .filter('datetime', formatDatetime)

@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  angular.module('app')
+  angular.module('app.common')
     .factory('PushPlugin', PushPlugin);
 
   // for Push plugin : https://github.com/phonegap-build/PushPlugin

@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  angular.module('app')
+  angular.module('app.common')
     .factory('CameraPlugin', CameraPlugin);
 
   // for Camera plugin : cordova-plugin-camera (https://github.com/apache/cordova-plugin-camera)

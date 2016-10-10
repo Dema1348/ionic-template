@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  angular.module('app')
+  angular.module('app.common')
     .factory('PluginUtils', PluginUtils);
 
   function PluginUtils($ionicPlatform, $q, $log){

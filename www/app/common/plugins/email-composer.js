@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  angular.module('app')
+  angular.module('app.common')
     .factory('EmailComposerPlugin', EmailComposerPlugin);
 
   // for EmailComposer plugin : de.appplant.cordova.plugin.email-composer (https://github.com/katzer/cordova-plugin-email-composer)

@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  angular.module('app')
+  angular.module('app.common')
     .factory('MediaPlugin', MediaPlugin);
 
   // for Media plugin : org.apache.cordova.media (https://github.com/apache/cordova-plugin-media)

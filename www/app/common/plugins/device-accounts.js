@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  angular.module('app')
+  angular.module('app.common')
     .factory('DeviceAccountsPlugin', DeviceAccountsPlugin);
 
   // for DeviceAccounts plugin : https://github.com/loicknuchel/cordova-device-accounts

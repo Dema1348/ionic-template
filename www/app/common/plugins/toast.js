@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  angular.module('app')
+  angular.module('app.common')
     .factory('ToastPlugin', ToastPlugin);
 
   // for Toast plugin : cordova-plugin-x-toast (https://github.com/EddyVerbruggen/Toast-PhoneGap-Plugin)

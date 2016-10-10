@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  angular.module('app')
+  angular.module('app.common')
     .factory('FileTransferPlugin', FileTransferPlugin);
 
   // for FileTransferPlugin plugin : cordova-plugin-file-transfer (https://github.com/apache/cordova-plugin-file-transfer)
